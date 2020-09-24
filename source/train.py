@@ -57,8 +57,8 @@ def my_config():
     }
 
     OUTPUT_PARAMS = {
-        'RESULT_PATH': os.environ['TRANING_DIR']+'/'+os.environ['BUILD_ID']+'/results/', #'../results/',
-        'MODEL_PATH':  os.environ['TRANING_DIR']+'/'+os.environ['BUILD_ID']+'/models/', #'../models/',
+        'RESULT_PATH': os.environ['TRAINING_DIR']+'/'+os.environ['BUILD_ID']+'/results/', #'../results/',
+        'MODEL_PATH':  os.environ['TRAINING_DIR']+'/'+os.environ['BUILD_ID']+'/models/', #'../models/',
         'LOG_ITER': 50,
         'SAVE_EPOCH': 5,
         'SAVE_CHECKPOINT': 50,
