@@ -46,8 +46,8 @@ def my_config():
     }
 
     DATA_PARAMS = {
-        'DATA_PATH': '../dataset/',
-        'DATA_SET': 'celeba',
+        'DATA_PATH': os.environ['DATA_DIR'], #'../dataset/',
+        'DATA_SET': '',
         'LABEL_NUM': 1200,
         'WORKERS_NUM': 4,
         'BATCH_SIZE': 16,
