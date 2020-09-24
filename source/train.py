@@ -22,6 +22,8 @@ import util_func as util_func
 import util_loss as util_loss
 import util_data as util_data
 
+import os
+
 ciagan_exp = Experiment()
 
 @ciagan_exp.config
@@ -55,8 +57,8 @@ def my_config():
     }
 
     OUTPUT_PARAMS = {
-        'RESULT_PATH': '../results/',
-        'MODEL_PATH': '../models/',
+        'RESULT_PATH': os.environ['TRANING_DIR']+'/'+os.environ['BUILD_ID']+'/results/', #'../results/',
+        'MODEL_PATH':  os.environ['TRANING_DIR']+'/'+os.environ['BUILD_ID']+'/models/', #'../models/',
         'LOG_ITER': 50,
         'SAVE_EPOCH': 5,
         'SAVE_CHECKPOINT': 50,

@@ -5,7 +5,8 @@ r = ciagan_exp.run(config_updates={
         {
             'ARCH_NUM': 'unet_flex',
             'ARCH_SIAM': 'resnet_siam',
-            'EPOCH_START': 0, 'EPOCHS_NUM': 2001,
+            'EPOCH_START': 0, 
+            'EPOCHS_NUM': 20, #2001
             'LEARNING_RATE': 0.0001,
             'FILTER_NUM': 16,
 
